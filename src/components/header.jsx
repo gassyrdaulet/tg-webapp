@@ -1,6 +1,6 @@
 import React from "react";
 import cl from "./styles/header.module.css";
-import Button from "./UI/buttons/button.jsx";
+import Button from "./UI/buttons/Button.jsx";
 import { useTelegram } from "../hooks/useTelegram";
 
 export default function header() {
