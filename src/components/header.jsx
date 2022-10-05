@@ -1,12 +1,14 @@
 import React from "react";
 import cl from "./styles/header.module.css";
 import Button from "./UI/buttons/button.jsx";
-const tg = window.Telegram.WebApp;
 
 export default function header() {
+  const tg = window.Telegram.WebApp;
+
   const onClose = () => {
     tg.close();
   };
+
   return (
     <div className={cl.header}>
       <Button onClick={onClose}>Close</Button>
