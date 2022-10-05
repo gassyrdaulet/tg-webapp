@@ -1,7 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect } from "react";
+const th = window.Telegram.WebApp;
 
 function App() {
+  useEffect(() => {
+    tg.ready();
+  }, []);
+
+  const onClose = () => {
+    tg.close();
+  };
+
   return (
     <div className="App">
       <header className="App-header">
