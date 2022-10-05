@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
+      {console.log(tg)}
       New Version
       <button onClick={onToggleButton}>Show menu</button>
     </div>
